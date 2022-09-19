@@ -103,8 +103,8 @@ chmod 775 wp-content/uploads
 touch /etc/apache2/sites-available/wordpress.conf
 cat > /etc/apache2/sites-available/wordpress.conf <<EOF
 <VirtualHost *:80>
-    ServerAdmin admin@rodpres.online
-    ServerName $your_domain
+    ServerAdmin azriff456@gmail.com
+    ServerName galerihidayah.khasiatsachainchioil.my
     # ServerAlias 
     DocumentRoot /var/www/html/wordpress
     ErrorLog ${APACHE_LOG_DIR}/error.log
@@ -130,7 +130,7 @@ systemctl restart apache2
 
 echo "SSL generate with certbot"
 apt install certbot python3-certbot-apache -y
-certbot run -n --apache --agree-tos -d wp.igunawan.com -m admin@igunawan.com  --redirect
+certbot run -n --apache --agree-tos -d galerihidayah.khasiatsachainchioil.my -m azriff456@gmail.com  --redirect
 
 echo "========================="
 echo "Installation is complete."
